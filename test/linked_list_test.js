@@ -18,4 +18,10 @@ describe('Linked list', function() {
     list.add(2);
     expect(list.search(2).value).to.equal(2);
   });
+  it('returns nil when searching for a non-existent value', function(){
+    var list = new LinkedList();
+
+    list.add(2);
+    expect(list.search(3)).to.equal(null);
+  });
 });
