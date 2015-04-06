@@ -23,6 +23,10 @@ describe('Linked list', function() {
     expect(list.search(3)).to.equal(null);
   });
 
+  it('correctly removes values', function() {
+    list.remove(4);
+    expect(list.to_s()).to.equal("7, 2");
+  });
   it('returns a value when it removes it from the list', function() {
     expect(list.remove(2)).to.equal(2);
   });
