@@ -7,6 +7,8 @@ describe('Linked list', function() {
   beforeEach(function() {
     list = new LinkedList();
     list.add(2);
+    list.add(4);
+    list.add(7);
   });
 
   it('should store new values at the head', function() {
@@ -26,5 +28,9 @@ describe('Linked list', function() {
   });
   it('returns null when removing a value that is not present', function() {
     expect(list.remove(3)).to.equal(null)
+  });
+
+  it('creates a comma-separated string when the to_s function is called', function() {
+    expect(list.to_s).to.equal("2, 4, 7");
   });
 });
