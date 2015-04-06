@@ -31,6 +31,6 @@ describe('Linked list', function() {
   });
 
   it('creates a comma-separated string when the to_s function is called', function() {
-    expect(list.to_s).to.equal("2, 4, 7");
+    expect(list.to_s()).to.equal("7, 4, 2");
   });
 });
