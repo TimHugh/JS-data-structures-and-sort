@@ -2,7 +2,7 @@ var expect = require('chai').expect;
 var LinkedList = require('../lib/linked_list.js');
 
 describe('Linked list', function() {
-  var list = new LinkedList();
+  var list = null;
 
   beforeEach(function() {
     list = new LinkedList();
