@@ -1,11 +1,11 @@
 var expect = require('chai').expect;
-var LinkedList = require('../lib/linked_list.js');
+var DoublyLinkedList = require('../lib/linked_list.js');
 
-describe('Linked list', function() {
+describe('Doubly-linked list', function() {
   var list = null;
 
   beforeEach(function() {
-    list = new LinkedList();
+    list = new DoublyLinkedList();
     list.add(2);
     list.add(4);
     list.add(7);
