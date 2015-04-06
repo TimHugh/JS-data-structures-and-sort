@@ -1,0 +1,27 @@
+{
+  "name": "js-dsa",
+  "version": "0.0.1",
+  "description": "Basic data structures and algorithms in JS",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/TimHugh/"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "js"
+  ],
+  "author": "Tim Heuett",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1"
+  }
+}
