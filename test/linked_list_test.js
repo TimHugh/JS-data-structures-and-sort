@@ -2,9 +2,10 @@ var expect = require('chai').expect;
 var LinkedList = require('../lib/linked_list.js');
 
 describe('Linked list', function() {
-  it('should have a value after being created', function(){
-    var list = new LinkedList(12, null);
+  it('should store new values at the head', function(){
+    var list = new LinkedList();
+    list.add(2);
 
-    expect('list').has.property('value');
+    expect(list.first()).to.equal(2);
   });
 });
