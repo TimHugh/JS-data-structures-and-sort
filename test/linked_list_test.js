@@ -11,4 +11,11 @@ describe('Linked list', function() {
     list.add(5);
     expect(list.first()).to.equal(5);
   });
+
+  it('should return the correct node when a value is searched', function(){
+    var list = new LinkedList();
+
+    list.add(2);
+    expect(list.search(2).value).to.equal(2);
+  });
 });
