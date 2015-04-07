@@ -20,4 +20,8 @@ The doubly linked list is identical to a linked list, but can be traversed in bo
 
 ### [Stack](http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29) : `src/stack.coffee`, `lib/stack.js`
 
-The stack is a very lightweight, efficient structure. It stores data using the FIFO method, using `push(value)` and `pop()` functions to add and remove elements. Both operations are done in `O( 1 )` time.
+The stack is a very lightweight, efficient structure. It stores data using the LIFO method, using `push(value)` and `pop()` functions to add and remove elements. Both operations are done in `O( 1 )` time.
+
+### [Queue]() : `src/queue.coffee`, `lib/queue.js`
+
+The queue is similar to a stack, but uses the FIFO method with `enqueue(value)` and `dequeue()`. Again, both operations are done in `O( 1 )` time.
