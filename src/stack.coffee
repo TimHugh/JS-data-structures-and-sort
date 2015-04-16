@@ -6,7 +6,8 @@ class Stack
     @head.value
 
   push: (value) ->
-    node = new Node(value)
+    node =
+      value: value
     if @head?
       node.next = @head
     @head = node
@@ -18,9 +19,5 @@ class Stack
     @head = @head.next
     @size--
     node.value
-
-  class Node
-    constructor: (@value) ->
-    next: null
 
 module.exports = Stack
