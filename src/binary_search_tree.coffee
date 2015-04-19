@@ -28,4 +28,12 @@ class BinarySearchTree
       @depth = 1
     @size++
 
+  contains: (value) ->
+    return false unless @root_node?
+    cur_node = @root_node
+    while cur_node?
+      return true if cur_node.value == value
+      cur_node = if value < cur_node.value then cur_node.left else cur_node.right
+    return false
+
 module.exports = BinarySearchTree
