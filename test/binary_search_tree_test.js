@@ -39,4 +39,14 @@ describe('Binary Search Tree', function(){
     tree.insert(4);
     expect(tree.balance).to.equal(-1);
   });
+
+  it('knows if it contains a given value', function(){
+    tree.insert(2);
+    tree.insert(1);
+    tree.insert(3);
+    tree.insert(4);
+
+    expect(tree.contains(4)).to.be.true;
+    expect(tree.contains(5)).to.be.false;
+  });
 });
