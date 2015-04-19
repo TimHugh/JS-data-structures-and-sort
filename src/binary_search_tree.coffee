@@ -13,13 +13,13 @@ class BinarySearchTree
         if value < cur_node.value
           unless cur_node.left?
             cur_node.left = {value: value}
-            @balance--
+            @balance++
           cur_node = cur_node.left
           cur_depth++
         else
           unless cur_node.right?
             cur_node.right = {value: value}
-            @balance++
+            @balance--
           cur_node = cur_node.right
           cur_depth++
       @depth = cur_depth if cur_depth > @depth
