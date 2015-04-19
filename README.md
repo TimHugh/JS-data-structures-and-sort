@@ -25,3 +25,7 @@ The stack is a very lightweight, efficient structure. It stores data using the L
 ### [Queue](http://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29) : `src/queue.coffee`, `lib/queue.js`
 
 The queue is similar to a stack, but uses the FIFO method with `enqueue(value)` and `dequeue()`. Again, both operations are done in `O( 1 )` time.
+
+### [Binary Search Tree]() : `src/binary_search_tree.coffee`
+
+The binary search tree is an ordered binary tree, optimized for search. Adding, removing, and searching are all operations of `O( log n)` time.
